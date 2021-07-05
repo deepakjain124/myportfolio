@@ -1,0 +1,471 @@
+              * {
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+          }
+          
+          html {
+              scroll-behavior: smooth;
+          }
+          
+          header {
+              background: url("/images/TripxTours-Desert-night.jpg");
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position: center;
+              margin-top: 0px;
+          }
+          
+          nav .navbar-nav a {
+              color: white !important;
+          }
+          
+          .desc h1 {
+              display: grid;
+              justify-content: center;
+              color: white;
+              font-size: 100px;
+              margin-top: 150px;
+              font-weight: bold;
+          }
+          
+          .desc p {
+              display: grid;
+              justify-content: center;
+              margin-top: 25px;
+              color: gold;
+              font-size: 25px;
+          }
+          
+          .contact a {
+              color: white;
+              text-decoration: none;
+          }
+          
+          .contact {
+              text-align: center;
+              margin-top: 35px;
+              font-size: 40px;
+              color: white;
+          }
+          
+          .contact .insta,
+          .ln,
+          .twi {
+              margin-left: 25px;
+          }
+          
+          .text p {
+              color: white !important;
+              font-weight: bold;
+              margin-top: 50px;
+              text-decoration: none;
+          }
+          
+          .animated p {
+              animation-duration: 2.5s;
+              animation-fill-mode: both;
+              animation-iteration-count: infinite;
+          }
+          
+          @keyframes pulse {
+              0% {
+                  transform: rotate(15deg);
+              }
+              50% {
+                  transform: scale(1.1);
+              }
+              100% {
+                  transform: scale(1);
+              }
+          }
+          
+          .pulse {
+              animation-name: pulse;
+              animation-duration: 1s;
+          }
+          
+          .about_me {
+              background-color: #2c363f;
+          }
+          
+          .about img {
+              width: 7cm;
+              height: 4cm;
+              border-radius: 60% 80% 40% 10%/70% 50% 30% 25%;
+              margin-top: 50px;
+          }
+          
+          .about .details {
+              margin-top: 50px;
+              margin-bottom: 70px;
+          }
+          
+          .about h3 {
+              color: white;
+              font-weight: 600;
+          }
+          
+          .about p {
+              color: grey;
+              font-style: italic;
+              line-height: 1cm;
+          }
+          
+          .education h4 {
+              margin-top: 50px;
+              border-bottom: 4px solid skyblue;
+              padding-bottom: 5px;
+          }
+          
+          .education .schooling {
+              margin-top: 50px;
+              margin-bottom: 50px;
+          }
+          
+          .education h3 {
+              font-weight: bolder;
+          }
+          
+          .education p {
+              font-style: italic;
+          }
+          
+          .skills {
+              margin-bottom: 40px;
+          }
+          
+          .skills p {
+              color: grey;
+          }
+          
+          .skills h4 {
+              border-bottom: 4px solid skyblue;
+              padding-bottom: 5px;
+          }
+          
+          .skills h5 {
+              color: rgb(44, 40, 40);
+              font-weight: bolder;
+          }
+          
+          .works {
+              background: rgb(218, 214, 214);
+          }
+          
+          .works h3 {
+              text-align: center;
+              padding-top: 100px;
+              font-size: 200;
+              font-weight: bold;
+              color: grey;
+          }
+          
+          .content {
+              position: relative;
+              width: 90%;
+              max-width: 400px;
+              margin: auto;
+              overflow: hidden;
+          }
+          
+          .content .content-overlay {
+              background: rgba(0, 0, 0, 0.7);
+              position: absolute;
+              height: 99%;
+              width: 100%;
+              left: 0;
+              top: 0;
+              bottom: 0;
+              right: 0;
+              opacity: 0;
+              -webkit-transition: all 0.4s ease-in-out 0s;
+              -moz-transition: all 0.4s ease-in-out 0s;
+              transition: all 0.4s ease-in-out 0s;
+          }
+          
+          .content:hover .content-overlay {
+              opacity: 1;
+          }
+          
+          .content-image {
+              width: 100%;
+          }
+          
+          .content-details {
+              position: absolute;
+              text-align: center;
+              padding-left: 1em;
+              padding-right: 1em;
+              width: 100%;
+              top: 50%;
+              left: 50%;
+              opacity: 0;
+              -webkit-transform: translate(-50%, -50%);
+              -moz-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+              -webkit-transition: all 0.3s ease-in-out 0s;
+              -moz-transition: all 0.3s ease-in-out 0s;
+              transition: all 0.3s ease-in-out 0s;
+          }
+          
+          .content:hover .content-details {
+              top: 50%;
+              left: 50%;
+              opacity: 1;
+          }
+          
+          .content-details h3 {
+              color: #fff;
+              font-weight: bolder;
+              text-transform: uppercase;
+          }
+          
+          .fadeIn-bottom {
+              top: 50%;
+          }
+          
+          .fadeIn-top {
+              top: 20%;
+          }
+          
+          .fadeIn-left {
+              left: 20%;
+          }
+          
+          .fadeIn-right {
+              left: 80%;
+          }
+          
+          .works .project1 {
+              margin-left: 0px;
+              margin-top: 20px;
+          }
+          
+          .works .project2 {
+              margin-left: 200px;
+              margin-top: 20px;
+          }
+          
+          .works .project3 {
+              margin-top: 70px;
+              margin-left: 300px;
+              margin-bottom: 70PX;
+          }
+          
+          .testi .slogan_img {
+              background-image: url(/images/photo-1531923981709-9fd5eb67572c.jpg);
+              background-repeat: no-repeat;
+              background-size: cover;
+          }
+          
+          .testi h1 {
+              color: white;
+              font-size: 40px;
+              font-family: 'Dancing Script', cursive;
+              font-family: 'Redressed', cursive;
+              margin-top: 1px;
+              padding-top: 25px;
+              border-bottom: 4px solid skyblue;
+          }
+          
+          .slogan h2 {
+              font-size: 20px;
+              margin: 100px auto 200px 200px;
+              color: white;
+              font-family: 'Redressed', cursive;
+              font-weight: bold;
+              line-height: 3rem;
+          }
+          
+          .form {
+              min-width: 450px;
+              height: 455px;
+              position: relative;
+              padding-top: 20px;
+              background: #141E30;
+              background: -webkit-linear-gradient(to top, #243B55, #141E30);
+              background: linear-gradient(to top, #243B55, #141E30);
+          }
+          
+          .line-top {
+              height: 2px;
+              width: 80%;
+              background: #D4CED8;
+              opacity: 0.2;
+              display: block;
+              margin: 0 auto;
+          }
+          
+          .send {
+              width: 100%;
+              height: 60px;
+              cursor: pointer;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              position: absolute;
+              color: white;
+              font-size: 1.6em;
+              bottom: 0;
+              background: #DE6262;
+              background: -webkit-linear-gradient(to right, #FFB88C, #DE6262);
+              background: linear-gradient(to right, #FFB88C, #DE6262);
+              box-shadow: none;
+              box-sizing: border-box;
+              outline: none;
+              border: none;
+          }
+          
+          form {
+              color: white;
+              padding: 0px 70px 10px 70px;
+              margin-top: -15px;
+          }
+          
+          h1 {
+              text-transform: uppercase;
+              font-size: 3em;
+              position: relative;
+          }
+          
+          #form h1:before {
+              content: "";
+              position: absolute;
+              left: 0;
+              bottom: -10px;
+              width: 30%;
+              border-bottom: 4px solid #DE6262;
+          }
+          
+          input {
+              padding: 20px 0 20px 0;
+              width: 90%;
+              box-shadow: none;
+              box-sizing: border-box;
+              outline: none;
+              border: none;
+              margin-left: 10%;
+              font-size: 18px;
+              color: white;
+              background: none;
+              opacity: 0.4;
+              border-bottom: 2px solid white;
+          }
+          
+          textarea {
+              width: 90%;
+              margin-left: 10%;
+              padding: 20px 0 0 0;
+              background: none;
+              resize: none;
+              overflow: hidden;
+              height: 115px;
+              font-size: 18px;
+              color: white;
+              box-shadow: none;
+              box-sizing: border-box;
+              outline: none;
+              border: none;
+              opacity: 0.4;
+              border-bottom: 2px solid white;
+              position: relative;
+          }
+          
+          #charNum {
+              float: right;
+              color: #DE6262;
+              font-size: 16px;
+              letter-spacing: 2px;
+              font-weight: bold;
+          }
+          
+          .input {
+              position: relative;
+          }
+          
+          .input i {
+              position: absolute;
+              transform: translatey(50%);
+              font-size: 1.2em;
+              color: white;
+              padding-top: 6px;
+          }
+          
+          input:focus,
+          input:valid,
+          textarea:focus {
+              opacity: 0.8;
+          }
+          
+          .form P {
+              text-align: center;
+              color: red;
+              background-color: black;
+              font-style: oblique;
+              margin-top: 20px;
+          }
+          
+          footer {
+              text-align: center;
+              padding-top: 40px;
+              font-size: 300;
+              margin-bottom: 100px;
+          }
+          
+          footer a {
+              color: blue;
+          }
+          
+          @media(max-width: 1024px) {
+              nav .navbar-nav a {
+                  margin-left: 100px;
+              }
+              ;
+              .desc h1 {
+                  font-size: 60px;
+                  text-align: center;
+              }
+              ;
+              .desc p {
+                  font-size: 20px;
+                  text-align: center;
+              }
+              .education h4 {
+                  text-align: center;
+              }
+              .skills h4 {
+                  text-align: center;
+              }
+              .slogan h2 {
+                  font-size: 15px;
+                  margin-left: 5px;
+              }
+              .contact {
+                  font-size: 25px;
+              }
+              .contact .insta,
+              .ln,
+              .twi {
+                  margin-left: 5px;
+                  font
+              }
+              .content-details h3 {
+                  color: #ffff;
+                  font-weight: 500;
+                  margin-bottom: 21em;
+                  text-transform: uppercase;
+              }
+              ;
+              .works .project3 {
+                  margin-top: 20px;
+                  margin-left: 20px;
+                  margin-bottom: 70PX;
+              }
+              .testi h1 {
+                  text-align: center;
+                  font-size: 25px;
+              }
+              .form {
+                  min-width: 100px;
+              }
